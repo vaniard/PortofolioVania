@@ -1,28 +1,27 @@
 # 📑 Portofolio Data Science & AI Engineering
 
 **Vania Rachmawati Dewi**
-
 *AI Engineering & Data Science Specialist*
 
-🔗 **LinkedIn:** [linkedin.com/in/vaniarachmawatidewi](https://www.linkedin.com/in/vaniarachmawatidewi/)
+🔗 **LinkedIn:** https://www.linkedin.com/in/vaniarachmawatidewi/
 
-💻 **GitHub:** [github.com/vaniard](https://www.google.com/search?q=https://github.com/vaniard)
+💻 **GitHub:** https://github.com/vaniard
 
 ---
 
 ## 👤 Ringkasan Profesional (About Me)
 
-Mahasiswa Sistem Informasi yang berfokus pada **Artificial Intelligence Engineering** dan **Data Science**. Memiliki keahlian mendalam dalam pemrosesan bahasa alami (*Natural Language Processing / NLP*), computer vision, analisis data eksploratif (EDA), serta pengembangan dasbor interaktif berbasis web. Terbiasa membangun *pipeline* pembelajaran mesin dari pengumpulan data, prapemrosesan, penanganan *imbalanced dataset*, hingga evaluasi dan *deployment* model.
+Mahasiswa Sistem Informasi yang berfokus pada **Artificial Intelligence Engineering** dan **Data Science**. Memiliki keahlian dalam *Natural Language Processing (NLP)*, computer vision, analisis data eksploratif (EDA), serta pengembangan dashboard interaktif berbasis web. Berpengalaman membangun *end-to-end machine learning pipeline* mulai dari pengumpulan data, preprocessing, penanganan *imbalanced dataset*, hingga evaluasi dan deployment model.
 
 ---
 
 ## 🛠️ Keahlian & Teknologi (Technical Skills)
 
 * **Bahasa Pemrograman:** Python
-* **Data Processing & Analysis:** Pandas, NumPy, Scikit-Learn
+* **Data Processing & Analysis:** Pandas, NumPy, Scikit-learn
 * **Visualisasi Data:** Matplotlib, Seaborn, Streamlit
-* **AI & Machine Learning:** Deep Learning (TensorFlow, GRU), Random Forest, Computer Vision, Sentiment Analysis (TF-IDF, Sastrawi, Lexicon-based Polarity, SMOTE)
-* **Deployment & Tools:** Streamlit Web Apps, Git, GitHub
+* **AI & Machine Learning:** Deep Learning (TensorFlow, GRU), Random Forest, Computer Vision, Sentiment Analysis (TF-IDF, Sastrawi, Lexicon-based, SMOTE)
+* **Deployment & Tools:** Streamlit, Git, GitHub
 
 ---
 
@@ -30,47 +29,73 @@ Mahasiswa Sistem Informasi yang berfokus pada **Artificial Intelligence Engineer
 
 ### 1. 📊 Sentiment Analysis App: Gojek Reviews (Skripsi / Research Project)
 
-* **Deskripsi:** Sistem analisis sentimen ulasan pengguna aplikasi Gojek untuk mengelompokkan tanggapan dan kepuasan pengguna.
+* **Deskripsi:** Sistem analisis sentimen ulasan pengguna aplikasi Gojek untuk mengelompokkan opini dan tingkat kepuasan pengguna.
 * **Fitur & Metodologi:**
-* Prapemrosesan teks bahasa Indonesia menggunakan teknik *stemming* Sastrawi dan ekstraksi fitur TF-IDF.
-* Penanganan *imbalanced data* menggunakan metode **SMOTE** (*Synthetic Minority Over-sampling Technique*).
-* Pemodelan dan perbandingan performa menggunakan **Random Forest** dan **Gated Recurrent Unit (GRU)**.
-* *Deployment* dasbor interaktif untuk visualisasi hasil klasifikasi dan tren sentimen secara real-time.
 
-
-* **Teknologi:** Python, Pandas, Scikit-learn, TensorFlow, Sastrawi, Streamlit.
+  * Preprocessing teks bahasa Indonesia (case folding, tokenizing, stopword removal, stemming Sastrawi)
+  * Ekstraksi fitur menggunakan TF-IDF
+  * Penanganan *imbalanced data* dengan SMOTE
+  * Pemodelan menggunakan Random Forest dan GRU
+  * Evaluasi model dengan accuracy, precision, recall, dan F1-score
+  * Dashboard interaktif untuk visualisasi hasil analisis sentimen
+* **Teknologi:** Python, Pandas, Scikit-learn, TensorFlow, Sastrawi, Streamlit
 
 ---
 
-### 2. ♻️ EcoWise: Automated Waste Classification System (Capstone Project)
+### 2. 🧠 Parkinson Detection System (PAK DE – Laskar AI Project)
 
-* **Deskripsi:** Sistem klasifikasi sampah otomatis berbasis *Computer Vision* yang mendeteksi dan mengategorikan sampah ke dalam kelompok organik, anorganik, dan B3 (Bahan Berbahaya dan Beracun).
+* **Deskripsi:** Sistem deteksi dini penyakit Parkinson berbasis *Computer Vision* yang menganalisis pola gambar spiral tulisan tangan menggunakan deep learning.
 * **Fitur & Metodologi:**
-* Penyusunan dan pemrosesan *dataset* citra sampah (*image preprocessing & augmentation*).
-* Pelatihan model *deep learning / computer vision* untuk identifikasi objek citra sampah secara akurat.
-* Integrasi model ke dalam dasbor Streamlit interaktif yang mempermudah pengguna mengunggah gambar dan memperoleh hasil prediksinya secara instan.
 
-
-* **Teknologi:** Python, TensorFlow / Keras, OpenCV, Streamlit.
+  * Pengolahan dataset citra spiral (*HandPD dataset & handwriting data*)
+  * Implementasi model CNN dengan pendekatan transfer learning
+  * Eksperimen dan tuning hyperparameter untuk meningkatkan performa model
+  * Evaluasi model menggunakan accuracy, precision, recall, F1-score, dan AUC
+  * Penanganan risiko seperti overfitting dan keterbatasan data
+  * Deployment model ke aplikasi berbasis web untuk prediksi secara real-time
+* **Hasil:** Model mencapai performa ≥85% accuracy
+* **Teknologi:** Python, TensorFlow/Keras, OpenCV, Streamlit
 
 ---
 
-### 3. 📉 Exploratory Data Analysis & Interactive Web Dashboard
+### 3. ♻️ EcoWise: Automated Waste Classification System (Capstone Project)
 
-* **Deskripsi:** Pembuatan visualisasi data dan dasbor analitik interaktif untuk eksplorasi *dataset* secara komprehensif.
+* **Deskripsi:** Sistem klasifikasi sampah berbasis *Computer Vision* untuk mengidentifikasi kategori sampah (organik, anorganik, B3, dan non-sampah).
 * **Fitur & Metodologi:**
-* *Prapemrosesan data:* Pembersihan *missing values*, penanganan *outlier*, dan transformasi fitur.
-* *Visualisasi interaktif:* Pembuatan grafik distribusi, korelasi antar variabel, serta ringkasan statistik yang dapat diakses pengguna non-teknis.
 
+  * Pengumpulan dan preprocessing dataset citra
+  * Data augmentation untuk meningkatkan kualitas dataset
+  * Pelatihan model deep learning untuk klasifikasi gambar
+  * Analisis distribusi data dan identifikasi *data imbalance*
+  * Dashboard interaktif berbasis Streamlit untuk visualisasi hasil
+* **Teknologi:** Python, TensorFlow/Keras, OpenCV, Streamlit
 
-* **Teknologi:** Python, Pandas, Matplotlib, Seaborn, Streamlit.
+---
+
+### 4. 📉 Exploratory Data Analysis & Interactive Web Dashboard
+
+* **Deskripsi:** Pengembangan dashboard interaktif untuk eksplorasi data dan penyajian insight secara visual.
+* **Fitur & Metodologi:**
+
+  * Data cleaning (missing values, outliers, transformasi fitur)
+  * Visualisasi distribusi dan korelasi data
+  * Penyajian insight dalam bentuk dashboard interaktif
+* **Teknologi:** Python, Pandas, Matplotlib, Seaborn, Streamlit
 
 ---
 
 ## 🎓 Pendidikan & Pelatihan
 
-* **S1 Sistem Informasi** – Spesialisasi AI & Data Science
-* **Coding Camp powered by DBS & Dicoding** – *Data Science & Machine Learning Track*
-* **Laskar AI** – *Educational Program in Artificial Intelligence Development*
+* **S1 Sistem Informasi** – Universitas Dirgantara Marsekal Suryadarma
+* **Coding Camp powered by DBS & Dicoding** – Data Science
+* **Laskar AI (Dicoding & Lintasarta)** – AI Engineer Program
 
 ---
+
+## 📫 Contact
+
+📧 [vaniardewi@gmail.com](mailto:vaniardewi@gmail.com)
+
+🔗 LinkedIn: https://www.linkedin.com/in/vaniarachmawatidewi
+
+💻 GitHub: https://github.com/vaniard
